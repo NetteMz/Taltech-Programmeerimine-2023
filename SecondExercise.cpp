@@ -1,13 +1,13 @@
 class Solution {
 public:
-    //to get maximum profit it takes prices on every day and then looks when the stock is worth most
+    //selleks et leida maksimaalne võimalik kasum võetakse iga päeva aktsia hind
     int maxProfit(vector<int>& prices) {
-        //enures that even if positive profit can not be made then still user won't lose anything     
+        //kontrollib et isegi kui kasumit ei saa siis jäädakse nulli (pole kahjumit)    
         int minPrice = INT_MAX, maxProfit = 0; 
         for (int price : prices) {
-            minPrice = min(minPrice, price); //checks the prices to see what could be the most profitable option
-            maxProfit = max(maxProfit, price - minPrice);// calculates the maximum profit that could be made
+            minPrice = min(minPrice, price); //otsib milline päev oleks kasum vähim
+            maxProfit = max(maxProfit, price - minPrice); //arvutab kõige suurema võimaliku kasumi
         }
-        return maxProfit; //gives the amount of profit
+        return maxProfit; //tagastab kasumi väärtuse
     }
 };
