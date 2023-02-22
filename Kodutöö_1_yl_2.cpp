@@ -1,13 +1,14 @@
 class Solution {
 public:
-    //selleks et leida maksimaalne vıimalik kasum vıetakse iga p‰eva aktsia hind
+    //selleks et leida maksimaalne v√µimalik kasum v√µetakse iga p√§eva aktsia hind
     int maxProfit(vector<int>& prices) {
-        //kontrollib et isegi kui kasumit ei saa siis j‰‰dakse nulli (pole kahjumit)    
+        //kontrollib et isegi kui kasumit ei saa siis j√§√§dakse nulli (pole kahjumit)    
         int minPrice = INT_MAX, maxProfit = 0;
         for (int price : prices) {
-            minPrice = min(minPrice, price); //otsib milline p‰ev oleks kasum v‰him
-            maxProfit = max(maxProfit, price - minPrice); //arvutab kıige suurema vıimaliku kasumi
+            minPrice = min(minPrice, price); //otsib milline p√§ev oleks kasum v√§him
+            maxProfit = max(maxProfit, price - minPrice); //arvutab k√µige suurema v√µimaliku kasumi
         }
-        return maxProfit; //tagastab kasumi v‰‰rtuse
+        return maxProfit; //tagastab kasumi v√§√§rtuse
     }
 };
+
