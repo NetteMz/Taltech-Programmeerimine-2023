@@ -1,4 +1,5 @@
 class Solution {
+#sorting the greed factors and cookie sizes	
 public:
 	int findContentChildren(vector<int>& g, vector<int>& s) {
 		sort(g.begin(), g.end());
