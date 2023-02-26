@@ -13,9 +13,9 @@ public:
 		kuni küpsised on otsas ja saame teada paljd lapsed saavad nendest küpsistest isu täis
 		*/
 		while (i < g.size() && j < s.size()) {
-			if (s[j]) >= g[i]{
-				contentChildren++,
-				i++;
+			if (s[j] >= g[i]) {
+			    contentChildren++,
+			    i++;
 			}
 			j++;
 		}
