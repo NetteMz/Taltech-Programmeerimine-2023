@@ -9,8 +9,8 @@ public:
 		int i = 0;
 		int j = 0;
 		/*
-		annab lapsele küpsise/küpsised vastavalt isule ja liigub siis järgmise lapse juurde 
-		kuni küpsised on otsas ja saame teada paljd lapsed saavad nendest küpsistest isu täis
+		annab lapsele kÃ¼psise/kÃ¼psised vastavalt isule ja liigub siis jÃ¤rgmise lapse juurde 
+		kuni kÃ¼psised on otsas ja saame teada paljd lapsed saavad nendest kÃ¼psistest isu tÃ¤is
 		*/
 		while (i < g.size() && j < s.size()) {
 			if (s[j]) >= g[i]{
@@ -20,8 +20,10 @@ public:
 			j++;
 		}
 
-		return contentChildren; //annab tulemuseks paljud lapsed isu täis said
+		return contentChildren; //annab tulemuseks paljud lapsed isu tÃ¤is said
 
 	}
 };
+
+
 
