@@ -1,0 +1,10 @@
+Kasutaja saab sisestada automargi ning eemaldada selle automarkide nimekirjast. Kui mark on eemaldatud siis prinditakse välja nimekiri neist automarkidest, mis alles jäid. Samuti saab lisada nimekirja uusi automarke.
+
+miinused:
+- kasutaja saab sisestada mida iganes kuna sisu ei kontrollita
+- suure nimekirja puhul võib while tsükkel osutuda ebaefektiivseks
+- kood võiks olla paremini kommenteeritud, eriti uue vaataja jaoks
+
+plussid:
+- on leitud hea, lihtne viis kuidas automarkide nimekirja hallata
+- on kasutatud sellist funktsiooni nagu "clear", mis puhastab konsoolivälja ja teeb kasutajale väljundi jälgimise oluliselt paremaks
