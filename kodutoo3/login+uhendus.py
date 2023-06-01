@@ -81,12 +81,12 @@ connection = mysql.connector.connect(
 )
 
 # # Create a cursor to execute SQL queries
-# cursor = connection.cursor(dictionary=True)
+cursor = connection.cursor(dictionary=True)
 
  # Start the CustomTkinter event loop()
 window.mainloop()
 
 # # Close the cursor and database connection when the program exits
-# cursor.close()
-# connection.close()
+cursor.close()
+connection.close()
 
