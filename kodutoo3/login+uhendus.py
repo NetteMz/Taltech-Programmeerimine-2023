@@ -1,5 +1,6 @@
 import mysql.connector
 from customtkinter import CTk, CTkLabel, CTkButton, CTkEntry
+import bcrypt 
 
 window = CTk()
 window.title("Kasutajaliides")
@@ -30,6 +31,8 @@ def create_account():
     username = username_entry.get()
     password = password_entry.get()
     birthday = birthday_entry.get()
+    
+    hashed_password = bcrypt.hashpw(password.encode(), bcrypt.gensalt())
 
     # paneb kasutaja sisestatud andmed andmebaasi
     query = "INSERT INTO Minu andmebaas (parool, kasutajanimi, sünnipäev) VALUES (%s, %s, %s)"
