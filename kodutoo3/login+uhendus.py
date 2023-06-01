@@ -80,7 +80,7 @@ connection = mysql.connector.connect(
     host="sql7.freemysqlhosting.net",
     user="sql7622218",
     password="W1SvJpaGAj",
-    database="sql762218"
+    database="sql7622218"
 )
 
 # # Create a cursor to execute SQL queries
