@@ -12,7 +12,7 @@ def login():
     birthday = birthday_entry.get()
 
     # peaks andmebaasist võtma kasutaja andmed ja neid kontrollima
-    query = "SELECT * FROM users WHERE username = %s"
+    query = "SELECT * FROM Minu andmebaas WHERE username = %s"
     cursor.execute(query, (username,))
     user = cursor.fetchone()
 
