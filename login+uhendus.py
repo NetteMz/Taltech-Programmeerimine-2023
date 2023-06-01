@@ -74,10 +74,10 @@ message_label.pack()
 
 # Establish a connection to the MySQL database- jama mis ei tööta
 # connection = mysql.connector.connect(
-#     host="sql7.freemysqlhosting.net:3306",
-#     user="sql7622218",
-#     password="W1SvJpaGAj",
-#     database="sql762218"
+#     host="",
+#     user="",
+#     password="",
+#     database=""
 # )
 
 # # Create a cursor to execute SQL queries
