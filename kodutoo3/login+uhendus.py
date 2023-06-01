@@ -32,8 +32,8 @@ def create_account():
     birthday = birthday_entry.get()
 
     # paneb kasutaja sisestatud andmed andmebaasi
-    query = "INSERT INTO users (username, password, birthday) VALUES (%s, %s, %s)"
-    values = (username, password, birthday)
+    query = "INSERT INTO Minu andmebaas (parool, kasutajanimi, sünnipäev) VALUES (%s, %s, %s)"
+    values = (password, username, birthday)
     cursor.execute(query, values)
     connection.commit()
 
