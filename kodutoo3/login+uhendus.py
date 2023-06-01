@@ -73,12 +73,12 @@ message_label = CTkLabel(window, text="")
 message_label.pack()
 
 # Establish a connection to the MySQL database- jama mis ei tööta
-# connection = mysql.connector.connect(
-#     host="sql7.freemysqlhosting.net",
-#     user="sql7622218",
-#     password="W1SvJpaGAj",
-#     database="sql762218"
-# )
+connection = mysql.connector.connect(
+    host="sql7.freemysqlhosting.net",
+    user="sql7622218",
+    password="W1SvJpaGAj",
+    database="sql762218"
+)
 
 # # Create a cursor to execute SQL queries
 # cursor = connection.cursor(dictionary=True)
